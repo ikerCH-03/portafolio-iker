@@ -11,6 +11,21 @@ body {
     color: #055d8d;
 }
 
+ul {
+    list-style-type: none;
+}
+
 img {
     width: 100%;
 }
+
+button {
+    background-color: #055d8d;
+    border: 3px solid white;
+}
+button > a {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes anim-fade-in { from { opacity: 0; } to { opacity: 1 } }
