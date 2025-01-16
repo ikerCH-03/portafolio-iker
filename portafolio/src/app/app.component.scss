@@ -1,0 +1,7 @@
+::view-transition-old(root) {
+    animation: exit 2s ease 0s 1 normal forwards;
+}
+
+::view-transition-new(root) {
+    animation: enter 3s ease 0s 1 normal forwards;
+}

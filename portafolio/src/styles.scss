@@ -30,3 +30,36 @@ button > a {
 }
 
 @keyframes anim-fade-in { from { opacity: 0; } to { opacity: 1 } }
+
+/* Animaciones */
+@keyframes enter {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px); /* Mueve la página hacia arriba al inicio */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animación de salida (cuando la página actual desaparece) */
+  @keyframes exit {
+    0% {
+      opacity: 1;
+      transform: scale(1); /* Empieza en tamaño normal */
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.6); /* Reduce el tamaño de la página */
+    }
+  }
+  
+  /* Aplicación de las animaciones a las transiciones de página */
+  ::view-transition-old(root) {
+    animation: exit 2s ease 0s 1 normal forwards; /* Animación de salida */
+  }
+  
+  ::view-transition-new(root) {
+    animation: enter 3s ease 0s 1 normal forwards; /* Animación de entrada */
+  }

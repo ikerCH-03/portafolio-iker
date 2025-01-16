@@ -1,14 +1,19 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-welcome',
   standalone: true,
-  imports: [RouterLink],
+  imports: [CommonModule],
   templateUrl: './welcome.component.html',
-  styleUrl: './welcome.component.scss'
+  styleUrl: './welcome.component.scss',
 })
 export class WelcomeComponent {
-
+  
+  constructor(private router: Router) {}
+  goToHome() {
+    this.router.navigate(['/home']);
+  }
   
 }
