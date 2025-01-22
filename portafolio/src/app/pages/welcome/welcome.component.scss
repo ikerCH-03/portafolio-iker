@@ -3,4 +3,7 @@
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: italic;
-  }
+}
+.container-fluid {
+  height: calc(100vh - 6rem); /* Altura restante después del padding */
+}

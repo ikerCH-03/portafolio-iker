@@ -1,65 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    background-color: #0a102f;
-    font-family: "Italiana", sans-serif;
+  padding: 3rem;
+  /* o el valor que desees */
+  overflow: hidden;
+  /* Para evitar el scroll */
+}
+
+
+body {
+  background-color: #0a102f;
+  font-family: "Italiana", sans-serif;
 }
 
 .fa-linkedin {
-    color: #055d8d;
+  color: #055d8d;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 button {
-    background-color: #055d8d;
-    border: 3px solid white;
-}
-button > a {
-    color: white;
-    text-decoration: none;
+  background-color: #055d8d;
+  border: 3px solid white;
 }
 
-@keyframes anim-fade-in { from { opacity: 0; } to { opacity: 1 } }
+button>a {
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes anim-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1
+  }
+}
 
 /* Animaciones */
 @keyframes enter {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px); /* Mueve la página hacia arriba al inicio */
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+    /* Mueve la página hacia arriba al inicio */
   }
-  
-  /* Animación de salida (cuando la página actual desaparece) */
-  @keyframes exit {
-    0% {
-      opacity: 1;
-      transform: scale(1); /* Empieza en tamaño normal */
-    }
-    100% {
-      opacity: 0;
-      transform: scale(0.6); /* Reduce el tamaño de la página */
-    }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Aplicación de las animaciones a las transiciones de página */
-  ::view-transition-old(root) {
-    animation: exit 2s ease 0s 1 normal forwards; /* Animación de salida */
+}
+
+/* Animación de salida (cuando la página actual desaparece) */
+@keyframes exit {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    /* Empieza en tamaño normal */
   }
-  
-  ::view-transition-new(root) {
-    animation: enter 3s ease 0s 1 normal forwards; /* Animación de entrada */
+
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+    /* Reduce el tamaño de la página */
   }
+}
+
+/* Aplicación de las animaciones a las transiciones de página */
+::view-transition-old(root) {
+  animation: exit 2s ease 0s 1 normal forwards;
+  /* Animación de salida */
+}
+
+::view-transition-new(root) {
+  animation: enter 3s ease 0s 1 normal forwards;
+  /* Animación de entrada */
+}
