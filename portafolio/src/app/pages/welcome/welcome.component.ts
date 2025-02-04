@@ -29,7 +29,7 @@ export class WelcomeComponent implements AfterViewInit {
     }
   
     let currentFrame = 0;
-    const totalFrames = 1500; // Ajusta la duración de la animación (más alto = más lento)
+    const totalFrames = 1800; // Ajusta la duración de la animación (más alto = más lento)
     const dashLength = 1000; // Un valor arbitrario para el largo del trazo
     textElement.style.strokeDasharray = `${dashLength}`;
     textElement.style.strokeDashoffset = `${dashLength}`;
