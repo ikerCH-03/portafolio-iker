@@ -1,13 +1,14 @@
 div {
     ul.nav {
-        background-color: azure;
+        background-color: #0A102F;
         li {
             padding: 10px;
             margin: 5px;
             font-weight: bolder;
             a {
                 text-decoration: none;
+                color: white;
             }
-        }
+        }   
     }
 }

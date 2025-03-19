@@ -3,6 +3,12 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+div.container-fluid {
+    height: calc(100vh - 6rem); /* Altura restante después del padding */
+    img {
+        border-radius: 20px;
+    }
+}
 ::view-transition-old(root) {
     animation: exit 2s ease 0s 1 normal forwards;
 }
