@@ -1,0 +1,37 @@
+<div class="skills-section d-flex justify-content-evenly">
+    <div>
+        <h2 class="text-center">Frontend</h2>
+        <div class="skills">
+            <div class="skill m-2" *ngFor="let skill of frontendSkills">
+                <img [src]="skill.icon" class="p-2" [alt]="skill.name" />
+                <div class="tooltip">
+                    <strong>{{ skill.name }}</strong>
+                    <p>Nivel: {{ skill.level }}</p>
+                    <div class="level-bar">
+                        <div class="fill"
+                            [ngStyle]="{ width: getLevelData(skill.level).width,background: getLevelData(skill.level).color }">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="text-center">Backend</h2>
+        <div class="skills">
+            <div class="skill m-2" *ngFor="let skill of backendSkills">
+                <img [src]="skill.icon" class="p-2" [alt]="skill.name" />
+                <div class="tooltip">
+                    <strong>{{ skill.name }}</strong>
+                    <p>Nivel: {{ skill.level }}</p>
+                    <div class="level-bar">
+                        <div class="fill"
+                            [ngStyle]="{ width: getLevelData(skill.level).width,background: getLevelData(skill.level).color }">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
