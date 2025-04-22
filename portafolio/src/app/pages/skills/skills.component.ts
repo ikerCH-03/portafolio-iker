@@ -17,11 +17,12 @@ interface Skill {
 export class SkillsComponent {
 
   frontendSkills: Skill[] = [
-    { name: 'Angular', icon: 'assets/icons/angular.png', level: 'Bajo' },
-    { name: 'TypeScript', icon: 'assets/icons/tp.png', level: 'Bajo' },
+    { name: 'Angular', icon: 'assets/icons/angular.png', level: 'Avanzado' },
+    { name: 'TypeScript', icon: 'assets/icons/tp.png', level: 'Intermedio' },
     { name: 'HTML5', icon: 'assets/icons/html.webp', level: 'Avanzado' },
-    { name: 'CSS3', icon: 'assets/icons/css3.svg', level: 'Intermedio' },
     { name: 'JavaScript', icon: 'assets/icons/js.webp', level: 'Intermedio' },
+    { name: 'CSS3', icon: 'assets/icons/css3.svg', level: 'Avanzado' },
+    { name: 'SCSS', icon: 'assets/icons/scss.svg', level: 'Intermedio' },
     //Añade más frontend aquí
   ];
 
@@ -31,7 +32,6 @@ export class SkillsComponent {
     { name: 'Symfony', icon: 'assets/icons/symfony.png', level: 'Intermedio' },
     { name: 'Python', icon: 'assets/icons/python.webp', level: 'Intermedio' },
     { name: 'MySql', icon: 'assets/icons/mysql.png', level: 'Intermedio' },
-
     //Añade más backend aquí
   ];
 
@@ -39,15 +39,17 @@ export class SkillsComponent {
     switch (level.toLowerCase()) {
       case 'bajo':
       case 'básico':
-        return { width: '33%', color: '#f44336' }; // rojo
+        return { width: '25%', color: '#f44336' }; // rojo
       case 'medio':
       case 'intermedio':
-        return { width: '66%', color: '#ffc107' }; // amarillo
+        return { width: '50%', color: '#ffc107' }; // amarillo
       case 'avanzado':
-        return { width: '100%', color: '#4caf50' }; // verde
+        return { width: '75%', color: '#67c256' }; // verde
+      case 'muy avanzado':
+        return { width: '100%', color: '#38833b' }; // verde más fuerte
       default:
-        return { width: '0%', color: '#ccc' }; //      gris por defecto
+        return { width: '0%', color: '#ccc' }; // gris por defecto
     }
   }
-  
+
 }
