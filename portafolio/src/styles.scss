@@ -8,16 +8,13 @@ html {
 }
 
 body {
+  height: 100%;
   padding: 3rem;
-  /* o el valor que desees */
   overflow: hidden;
-  /* Para evitar el scroll */
 }
-
 
 body {
   background-color: #0a102f;
-  font-family: "Italiana", sans-serif;
 }
 
 .fa-linkedin {
@@ -90,4 +87,12 @@ button>a {
 ::view-transition-new(root) {
   animation: enter 3s ease 0s 1 normal forwards;
   /* Animación de entrada */
+}
+
+@media screen and (max-width:660px) {
+  body {
+    padding: 2rem;
+    overflow: auto;
+    height: auto;
+  }
 }

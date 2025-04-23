@@ -1,0 +1,24 @@
+.home-section {
+    height: 100vh;
+    /* o 100% si ya estás dentro de algo con altura */
+    padding: 2rem;
+    text-align: justify;
+}
+
+.text {
+    max-width: 500px;
+}
+
+.foto {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    /* por estética */
+}
+
+/* Ajuste responsive opcional */
+@media (max-width: 768px) {
+    .home-section {
+        flex-direction: column;
+    }
+}

@@ -1,7 +1,8 @@
-.container-fluid {
-  height: calc(100vh - 6rem); /* Altura restante después del padding */
-  .boton {
-    background-color: #adaeb127;
-    box-shadow: 4px 6px 3px white;
-  }
+.boton {
+  background-color: #adaeb127;
+  box-shadow: 4px 6px 3px white;
+}
+
+@media screen and (max-width:400px) {
+  
 }
