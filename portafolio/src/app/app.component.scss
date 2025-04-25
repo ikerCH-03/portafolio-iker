@@ -3,12 +3,17 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 div.container-fluid {
-    height: calc(100vh - 6rem); /* Altura restante después del padding */
+    min-height: calc(100vh - 6rem);
+    height: auto;
+
+    /* Altura restante después del padding */
     img {
         border-radius: 20px;
     }
 }
+
 ::view-transition-old(root) {
     animation: exit 2s ease 0s 1 normal forwards;
 }
@@ -17,8 +22,16 @@ div.container-fluid {
     animation: enter 3s ease 0s 1 normal forwards;
 }
 
-@media screen and (max-width:750px) {
+/* Responsive */
+@media screen and (max-width: 550px) {
     div.container-fluid {
-        height: 100%;
+        min-height: calc(100vh - 2.4rem);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 450px) {
+    div.container-fluid {
+        min-height: calc(100vh - 1.6rem);
     }
 }

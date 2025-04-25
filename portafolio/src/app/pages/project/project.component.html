@@ -1,37 +1,20 @@
 <div class="project-section d-flex flex-wrap w-100 justify-content-evenly">
-    <div class="skills-intro px-5 mb-5 fw-bold">
-        <p>
-            Estos son algunos de los proyectos que he ido desarrollando a lo largo de mi formación, tanto en clase como por mi cuenta o durante las prácticas. 
+    <div class="skills-intro mb-2 fw-bold">
+        <p class="mb-0">
+            Estos son algunos de los proyectos que he ido desarrollando a lo largo de mi formación, tanto en clase como
+            por mi cuenta o durante las prácticas.
             Aunque todavía no he tenido experiencia profesional, espero pronto poder tener proyectos profesionales.
         </p>
     </div>
-    <div class="card card-hover-info m-3" style="width: 18rem;">
-        <img src="assets/multitasking.png" class="card-img" alt="...">
+    <div *ngFor="let proyecto of proyectos" class="card card-hover-info m-3">
+        <img [src]="proyecto.img" class="card-img" alt="...">
         <div class="card-info">
-            <h5 class="card-title">Multitasking</h5>
+            <h5 class="card-title">{{proyecto.name}}</h5>
             <div class="card-text">
-                <p>Proyecto desarrollado con Symfony que permite a usuarios publicar tareas y a otros
-                    usuarios postularse para realizarlas a cambio de una remuneración.
-                    Incluye valoraciones y perfiles para asegurar confianza entre las partes.</p>
+                <p>{{proyecto.info}}</p>
                 <hr class="text-white w-100">
                 <div class="card-links">
-                    <a href="https://github.com/ikerCH-03/Multitasking-proyecto" class="mx-2"><i
-                            class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card card-hover-info m-3" style="width: 18rem;">
-        <img src="assets/multifunción.jpg" class="card-img" alt="...">
-        <div class="card-info">
-            <h5 class="card-title">Multifunción</h5>
-            <div class="card-text">
-                <p>Se trata de un proyecto donde se encuentran varias funciones(calculadora,tiempo,
-                    países) realizado con angular.</p>
-                <hr class="text-white w-100">
-                <div class="card-links">
-                    <a href="https://github.com/ikerCH-03/proyecto-multifuncion" class="mx-2"><i
-                            class="fa-brands fa-github"></i></a>
+                    <a [href]="proyecto.git" class="mx-2" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>

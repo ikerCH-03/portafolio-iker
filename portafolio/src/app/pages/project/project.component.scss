@@ -1,8 +1,17 @@
+p {
+    text-align: justify;
+}
+
 .card {
     box-shadow: 0 4px 10px rgba(220, 220, 220, 0.3);
     background-color: rgb(1, 1, 79);
     color: white;
+    width: 18rem;
+}
 
+.skills-intro {
+    margin-bottom: 0;
+    padding: 0 20px 0 20px;
 }
 
 .card-hover-info {
@@ -57,4 +66,24 @@
 /* Mostrar el texto cuando se expande */
 .card-hover-info:hover .card-text {
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .skills-intro {
+        margin-bottom: 0;
+        padding: 0 15px 0 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 15rem;
+    }
+    .card-info {
+        padding: 0.5rem 0.75rem;
+        p {
+            font-size: 12px;
+        }
+    }
+
 }
