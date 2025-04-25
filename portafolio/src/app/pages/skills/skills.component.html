@@ -1,18 +1,20 @@
-<div class="skills-intro px-5">
+<div class="skills-intro px-lg-5 px-3 ">
     <p>
         A lo largo de mi formación y experiencia, he desarrollado una base sólida en desarrollo web, tanto
-        en el lado del <b><i>frontend</i></b> como en el <b><i>backend</i></b>. He manejado <b><i>frameworks modernos, diseño responsive</i></b> y también he podido realizar
-            distintas prácticas que involucran <b><i>APIS</i></b>.
+        en el lado del <b><i>frontend</i></b> como en el <b><i>backend</i></b>. He manejado <b><i>frameworks modernos,
+                diseño responsive</i></b> y también he podido realizar
+        distintas prácticas que involucran <b><i>APIS</i></b>.
     </p>
-    <p>
-        Además,tengo algunos conocimientos de <b><i>Machine Learning, procesamiento de datos y conceptos relacionados con Inteligencia Artificial y Big Data</i></b>.
+    <p class="mb-3">
+        Además,tengo algunos conocimientos de <b><i>Machine Learning, procesamiento de datos y conceptos relacionados
+                con Inteligencia Artificial y Big Data</i></b>.
         A continuación, puedes ver una representación de mis habilidades, organizadas por área y nivel de dominio.
     </p>
 </div>
 
 <div class="skills-section d-flex justify-content-evenly flex-wrap">
     <div>
-        <h2 class="text-center">Frontend</h2>
+        <h2 class="text-center my-3">Frontend</h2>
         <div class="skills">
             <div class="skill m-2" *ngFor="let skill of frontendSkills">
                 <img [src]="skill.icon" class="p-2" [alt]="skill.name" />
@@ -28,8 +30,8 @@
             </div>
         </div>
     </div>
-    <div>
-        <h2 class="text-center">Backend</h2>
+    <div class="backend">
+        <h2 class="text-center my-3">Backend</h2>
         <div class="skills">
             <div class="skill m-2" *ngFor="let skill of backendSkills">
                 <img [src]="skill.icon" class="p-2" [alt]="skill.name" />
