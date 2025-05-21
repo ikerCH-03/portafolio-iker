@@ -91,11 +91,11 @@ button>a {
 
 /* Aplicación de las animaciones a las transiciones de página */
 ::view-transition-old(root) {
-  animation: exit 2s ease 0s 1 normal forwards;
+  animation: exit 1.5s ease 0s 1 normal forwards;
   /* Animación de salida */
 }
 
 ::view-transition-new(root) {
-  animation: enter 3s ease 0s 1 normal forwards;
+  animation: enter 1.5s ease 0s 1 normal forwards;
   /* Animación de entrada */
 }

@@ -1,15 +1,33 @@
+// Estilos del nav
 div {
     ul.navbar-nav {
         background-color: #0A102F;
         box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+
         li.nav-item {
-            padding: 10px;
+            padding: 12px;
             margin: 5px;
             font-weight: bolder;
+            background-image: linear-gradient(white, white);
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            background-position: left;
+            transition: background-size 0.6s ease;
+
             a {
                 text-decoration: none;
                 color: white;
+
+
             }
-        }   
+
+            &:hover {
+                background-size: 100% 100%;
+            }
+
+            &:hover a {
+                color: #0A102F; // cambia este color según el contraste que busques
+            }
+        }
     }
 }

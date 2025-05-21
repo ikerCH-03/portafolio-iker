@@ -7,14 +7,14 @@
         </p>
     </div>
     <div *ngFor="let proyecto of proyectos" class="card card-hover-info m-3">
-        <img [src]="proyecto.img" class="card-img" alt="...">
+        <img src="/assets/sitio-en-construccion.jpg" class="card-img" alt="...">
         <div class="card-info">
             <h5 class="card-title">{{proyecto.name}}</h5>
             <div class="card-text">
                 <p>{{proyecto.info}}</p>
                 <hr class="text-white w-100">
                 <div class="card-links">
-                    <a [href]="proyecto.git" class="mx-2" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <!--<a [href]="proyecto.git" class="mx-2" target="_blank"><i class="fa-brands fa-github"></i></a>-->
                 </div>
             </div>
         </div>

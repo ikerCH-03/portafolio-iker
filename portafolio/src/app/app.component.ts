@@ -21,4 +21,9 @@ export class AppComponent {
   get showNavBar(): boolean {
     return this.router.url !== '/';
   }
+
+  // Verificar si esta en la página de error
+  get errorPage(): boolean {
+    return this.router.url === '/error404';
+  }
 }

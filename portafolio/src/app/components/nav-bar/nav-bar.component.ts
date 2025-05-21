@@ -1,7 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 
-declare var bootstrap: any; // Esto es CLAVE
+declare var bootstrap: any;
 
 @Component({
   selector: 'nav-bar',
@@ -11,6 +11,7 @@ declare var bootstrap: any; // Esto es CLAVE
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
+  
   @ViewChild('navbar') navbar!: ElementRef;
 
   constructor(private router: Router) {}
