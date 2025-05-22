@@ -14,7 +14,7 @@ import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portafolio';
+  title = 'Portafolio de Iker';
   constructor(private router: Router) {}
 
   // Verifica si la ruta actual es 'welcome'

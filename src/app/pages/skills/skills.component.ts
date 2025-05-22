@@ -16,6 +16,7 @@ interface Skill {
 })
 export class SkillsComponent {
 
+  // Variables de las skills
   frontendSkills: Skill[] = [
     { name: 'Angular', icon: 'assets/icons/angular.png', level: 'Avanzado' },
     { name: 'TypeScript', icon: 'assets/icons/tp.png', level: 'Intermedio' },
@@ -35,6 +36,7 @@ export class SkillsComponent {
     //Añade más backend aquí
   ];
 
+  // Función para rellenar la barra y su color dependiendo del nivel
   getLevelData(level: string): { width: string, color: string } {
     switch (level.toLowerCase()) {
       case 'bajo':

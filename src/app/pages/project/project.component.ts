@@ -17,6 +17,8 @@ interface Proyecto {
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
+
+  // Variable con los distintos proyectos
   proyectos: Proyecto[] = [
     {
       name: "Multitasking", info: "Proyecto desarrollado con Symfony que permite a usuarios publicar tareas y a otros usuarios postularse para realizarlas a cambio de una remuneración.Incluye valoraciones y perfiles para asegurar confianza entre las partes.",

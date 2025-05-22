@@ -18,15 +18,16 @@ En esta aplicación podras ver los proyectos que he ido realizando a lo largo de
 
 ## 📦 Instalación
 
-***1. Clonar la app**
+### **1. Clonar la app**
 
 ```bash
 git clone https://github.com/tu-usuario/tu-proyecto.git
 ```
 
-***2. Iniciar la app**
+### ***2. Iniciar la app**
 
-```cd tu-proyecto
+```bash
+cd tu-proyecto
 npm install
 ng serve y navegar a `http://localhost:4200/` o también puedes poner directamente *ng serve -o*
 ```
