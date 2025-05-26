@@ -4,20 +4,34 @@ div {
         background-color: #0A102F;
         box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
 
+        // Estado activo (la página actual)
+        a.item-link.active {
+            background-color: white;
+
+            li.nav-item {
+                color: #0A102F; // Color oscuro para contraste sobre blanco
+            }
+        }
+
+
         a.item-link {
             padding: 12px;
             margin: 5px;
             font-weight: bolder;
-            background-image: linear-gradient(white, white);
-            background-size: 0% 100%;
-            background-repeat: no-repeat;
-            background-position: left;
-            transition: background-size 0.6s ease;
             text-decoration: none;
 
             li.nav-item {
                 color: white;
+                transition: color 0.3s ease;
             }
+        }
+
+        a.item-link:not(.active) {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            background-position: left;
+            transition: background-size 0.6s ease;
 
             &:hover {
                 background-size: 100% 100%;
