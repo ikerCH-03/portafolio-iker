@@ -80,15 +80,17 @@
 }
 
 @media screen and (max-width: 400px) {
-    .card {
-        width: 15rem;
-    }
+    .project-section {
+        .card-hover-info {
+            width: 15rem;
+        }
 
-    .card-info {
-        padding: 0.5rem 0.75rem;
+        .card-info {
+            padding: 0.5rem 0.75rem;
 
-        p {
-            font-size: 12px;
+            p {
+                font-size: 12px;
+            }
         }
     }
 
