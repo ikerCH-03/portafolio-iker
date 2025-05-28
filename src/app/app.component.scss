@@ -1,0 +1,55 @@
+.eb-garamond {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+div.container-fluid {
+    min-height: calc(100vh - 6rem);
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.7fr repeat(3, 1fr) 0.5fr;
+
+
+    /* Altura restante después del padding */
+    img {
+        border-radius: 20px;
+    }
+
+    .content {
+        grid-row: span 3 / span 3;
+        grid-row-start: 2;
+    }
+
+    .footer {
+        grid-row-start: 5;
+    }
+
+    .fa-linkedin {
+        color: #055d8d;
+    }
+}
+
+::view-transition-old(root) {
+    animation: exit 2s ease 0s 1 normal forwards;
+}
+
+::view-transition-new(root) {
+    animation: enter 3s ease 0s 1 normal forwards;
+}
+
+/* Responsive */
+@media screen and (max-width: 550px) {
+    div.container-fluid {
+        min-height: calc(100vh - 2.4rem);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 450px) {
+    div.container-fluid {
+        min-height: calc(100vh - 1.6rem);
+    }
+}

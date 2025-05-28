@@ -1,0 +1,95 @@
+/* Estilos de la sección de los proyectos */
+.project-section {
+    height: 100%;
+    text-align: justify;
+
+    .projects-intro {
+        margin-bottom: 0;
+        padding: 20px;
+    }
+
+    .card {
+        box-shadow: 0 4px 10px rgba(220, 220, 220, 0.3);
+        background-color: rgb(1, 1, 79);
+        color: white;
+        width: 18rem;
+    }
+
+    .card-hover-info {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .card-hover-info img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        transition: transform 0.4s ease;
+    }
+
+    /* Bloque inferior visible con animación */
+    .card-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 0.75rem 1rem;
+        transition: all 1s ease;
+        max-height: 3.5rem;
+        /* Altura para solo título */
+        overflow: hidden;
+    }
+
+    /* Estilos del texto escondido hasta el hover */
+    .card-text {
+        margin: 0.5rem 0 0 0;
+        font-size: 0.9rem;
+        opacity: 0;
+        transition: opacity 2s ease;
+    }
+
+}
+
+.card-hover-info:hover img {
+    transform: scale(1.03);
+    filter: brightness(0.7);
+}
+
+/* Al hacer hover, se expande para mostrar el texto */
+.card-hover-info:hover .card-info {
+    max-height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Mostrar el texto cuando se expande */
+.card-hover-info:hover .card-text {
+    opacity: 1;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .projects-intro {
+        margin-bottom: 0;
+        padding: 0 15px 0 15px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 15rem;
+    }
+
+    .card-info {
+        padding: 0.5rem 0.75rem;
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+}

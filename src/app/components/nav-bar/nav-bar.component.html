@@ -1,0 +1,32 @@
+<!-- Código para el nav y su toggle cuando se hace más pequeño -->
+<nav class="navbar navbar-expand-lg 2">
+    <div class="container-fluid">
+        <button class="navbar-toggler text-white mb-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </button>
+        <div class="d-block d-lg-none text-end mx-2 mb-2">IKER CORDÓN HARO</div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" #navbar>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="item-link" routerLink="/home" routerLinkActive="active">
+                    <li class="nav-item">
+                        HOME
+                    </li>
+                </a>
+                <a class="item-link" routerLink="/knowledge" routerLinkActive="active">
+                    <li class="nav-item">
+                        CONOCIMIENTOS
+                    </li>
+                </a>
+
+                <a class="item-link" routerLink="/projects" routerLinkActive="active">
+                    <li class="nav-item">
+                        PROYECTOS
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="d-none d-lg-block text-end">IKER CORDÓN HARO</div>
+    </div>
+</nav>
