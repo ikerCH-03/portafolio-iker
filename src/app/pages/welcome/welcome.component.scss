@@ -1,8 +1,17 @@
+/* Estilos de la página de bienvenida */
 .boton {
-  background-color: #adaeb127;
-  box-shadow: 4px 6px 3px white;
+  background-color: white;
+  border: 5px solid #0a102f;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.678);
 }
 
-@media screen and (max-width:400px) {
-  
+button:hover {
+  background-color: #f0f0f05d; /* Color más suave */
+}
+
+/* Efecto al hacer clic (presionado) */
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Sombra más corta */
+  background-color: #f5f5f5;
 }

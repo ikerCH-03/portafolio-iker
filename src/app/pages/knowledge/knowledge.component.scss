@@ -1,3 +1,4 @@
+/* Estilos de la páginas para los conocimientos/formación */
 .skills-intro {
     font-size: 16px;
     text-align: justify;
@@ -55,6 +56,7 @@
     }
 }
 
+/* Estilos para la barrita de nivel */
 .level-bar {
     width: 100%;
     height: 8px;
@@ -100,4 +102,5 @@
     70% {
         transform: rotate(-5deg);
     }
+
 }

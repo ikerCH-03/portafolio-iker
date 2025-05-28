@@ -5,26 +5,14 @@
 
 html {
   height: 100%;
-
-  body {
-    min-height: 100%;
-    padding: 3rem;
-    overflow: auto;
-    background-color: #0a102f;
-    
-    button {
-      background-color: #055d8d;
-      border: 3px solid white;
-    }
-
-    button>a {
-      color: white;
-      text-decoration: none;
-    }
-  }
 }
 
-
+body {
+  min-height: 100%;
+  padding: 3rem;
+  overflow: auto;
+  background-color: #0a102f;
+}
 
 @keyframes anim-fade-in {
   from {
@@ -81,11 +69,11 @@ html {
 
 /* Aplicación de las animaciones a las transiciones de página */
 ::view-transition-old(root) {
-  animation: exit 1.5s ease 0s 1 normal forwards;
+  animation: exit 2s ease 0s 1 normal forwards;
   /* Animación de salida */
 }
 
 ::view-transition-new(root) {
-  animation: enter 1.5s ease 0s 1 normal forwards;
+  animation: enter 3s ease 0s 1 normal forwards;
   /* Animación de entrada */
 }
