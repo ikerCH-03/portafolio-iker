@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-welcome',
+  selector: 'welcome-page',
   standalone: true,
   templateUrl: './welcome.component.html',
   styleUrl: './welcome.component.scss',

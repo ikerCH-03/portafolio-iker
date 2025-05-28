@@ -1,40 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos globales de la página */
 * {
   box-sizing: border-box;
 }
 
 html {
   height: 100%;
+
+  body {
+    min-height: 100%;
+    padding: 3rem;
+    overflow: auto;
+    background-color: #0a102f;
+    
+    button {
+      background-color: #055d8d;
+      border: 3px solid white;
+    }
+
+    button>a {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
-body {
-  min-height: 100%;
-  padding: 3rem;
-  overflow: auto;
-  background-color: #0a102f;
-}
 
-.fa-linkedin {
-  color: #055d8d;
-}
-
-ul {
-  list-style-type: none;
-}
-
-img {
-  width: 100%;
-}
-
-button {
-  background-color: #055d8d;
-  border: 3px solid white;
-}
-
-button>a {
-  color: white;
-  text-decoration: none;
-}
 
 @keyframes anim-fade-in {
   from {

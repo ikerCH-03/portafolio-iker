@@ -16,7 +16,7 @@
     <div>
         <h2 class="text-center my-3">Frontend</h2>
         <div class="skills">
-            <div class="skill m-2" *ngFor="let skill of frontendSkills">
+            <div class="skill m-2" *ngFor="let skill of frontendKnowledge">
                 <img [src]="skill.icon" class="p-2" [alt]="skill.name" />
                 <div class="tooltip">
                     <strong>{{ skill.name }}</strong>
@@ -33,7 +33,7 @@
     <div class="backend">
         <h2 class="text-center my-3">Backend</h2>
         <div class="skills">
-            <div class="skill m-2" *ngFor="let skill of backendSkills">
+            <div class="skill m-2" *ngFor="let skill of backendKnowledge">
                 <img [src]="skill.icon" class="p-2" [alt]="skill.name" />
                 <div class="tooltip">
                     <strong>{{ skill.name }}</strong>

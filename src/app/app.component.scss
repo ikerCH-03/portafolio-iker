@@ -26,6 +26,10 @@ div.container-fluid {
     .footer {
         grid-row-start: 5;
     }
+
+    .fa-linkedin {
+        color: #055d8d;
+    }
 }
 
 ::view-transition-old(root) {

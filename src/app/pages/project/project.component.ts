@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
+// Creación de la interfaz para los proyectos
 interface Proyecto {
   name: string;
   info: string;
@@ -10,7 +11,7 @@ interface Proyecto {
 }
 
 @Component({
-  selector: 'app-project',
+  selector: 'project-page',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './project.component.html',

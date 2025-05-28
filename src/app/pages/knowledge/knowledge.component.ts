@@ -1,23 +1,23 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
-interface Skill {
+interface Knowledge {
   name: string;
   icon: string;
   level: string;
 }
 
 @Component({
-  selector: 'app-skills',
+  selector: 'knowledge-page',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  templateUrl: './knowledge.component.html',
+  styleUrl: './knowledge.component.scss'
 })
-export class SkillsComponent {
+export class KnowledgeComponent {
 
-  // Variables de las skills
-  frontendSkills: Skill[] = [
+  // Variables de las knowledge
+  frontendKnowledge: Knowledge[] = [
     { name: 'Angular', icon: 'assets/icons/angular.png', level: 'Avanzado' },
     { name: 'TypeScript', icon: 'assets/icons/tp.png', level: 'Intermedio' },
     { name: 'HTML5', icon: 'assets/icons/html.webp', level: 'Avanzado' },
@@ -27,7 +27,7 @@ export class SkillsComponent {
     //Añade más frontend aquí
   ];
 
-  backendSkills: Skill[] = [
+  backendKnowledge: Knowledge[] = [
     { name: 'Java', icon: 'assets/icons/java.png', level: 'Bajo' },
     { name: 'Php', icon: 'assets/icons/php.png', level: 'Bajo' },
     { name: 'Symfony', icon: 'assets/icons/symfony.png', level: 'Intermedio' },

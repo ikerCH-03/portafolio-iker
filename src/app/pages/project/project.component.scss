@@ -1,3 +1,4 @@
+/* Estilos de la sección de los proyectos */
 .project-section {
     height: 100%;
     text-align: justify;
@@ -28,7 +29,7 @@
         transition: transform 0.4s ease;
     }
 
-    /* Bloque inferior siempre visible con animación */
+    /* Bloque inferior visible con animación */
     .card-info {
         position: absolute;
         bottom: 0;
@@ -43,7 +44,7 @@
         overflow: hidden;
     }
 
-    /* Texto escondido hasta el hover */
+    /* Estilos del texto escondido hasta el hover */
     .card-text {
         margin: 0.5rem 0 0 0;
         font-size: 0.9rem;
@@ -61,7 +62,6 @@
 /* Al hacer hover, se expande para mostrar el texto */
 .card-hover-info:hover .card-info {
     max-height: 100%;
-    /* o lo que necesites */
     background: rgba(0, 0, 0, 0.8);
 }
 
@@ -70,7 +70,7 @@
     opacity: 1;
 }
 
-//Medias querys
+/* Responsive */
 @media screen and (max-width: 768px) {
     .projects-intro {
         margin-bottom: 0;
