@@ -11,8 +11,8 @@ export class WelcomeComponent implements AfterViewInit {
 
   constructor(private el: ElementRef, private router: Router) { }
 
-  goToHome() {
-    this.router.navigate(['/home']);
+  goToAbout() {
+    this.router.navigate(['/about']);
   }
 
   ngAfterViewInit(): void {

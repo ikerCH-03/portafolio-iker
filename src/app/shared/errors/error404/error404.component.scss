@@ -20,7 +20,7 @@
         margin-bottom: 2rem;
     }
 
-    a.botonHome {
+    a.botonAbout {
         text-decoration: none;
         background-color: #fff;
         color: #0a102f;
@@ -34,12 +34,12 @@
 }
 
 /* Efecto al pasar el ratón */
-.not-found-container a.botonHome:hover {
+.not-found-container a.botonAbout:hover {
     background-color: #f0f0f05d;
 }
 
 /* Efecto al hacer clic (presionado) */
-.not-found-container a.botonHome:active {
+.not-found-container a.botonAbout:active {
     transform: translateY(4px);
     box-shadow: 0 2px 6px rgba(84, 84, 84, 0.3);
     background-color: #f5f5f5;
