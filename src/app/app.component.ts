@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, Router, RouterLink, RouterOutlet } from '@angular/router';
-import { NoopAnimationPlayer } from '@angular/animations';
-import { WelcomeComponent } from "./pages/welcome/welcome.component";
+import { Router, RouterOutlet } from '@angular/router';
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
 // import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
 

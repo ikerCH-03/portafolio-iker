@@ -43,3 +43,21 @@ div {
         }
     }
 }
+
+/* Responsive para quitar la animación al pasar el ratón
+ porque cuando se usa un movil o tablet se pulsa directamente y no hace falta la animación  */
+@media screen and (max-width:770px) {
+    div {
+        ul.navbar-nav {
+            a.item-link:not(.active) {
+                background-image: none;
+                transition: none;
+
+                &:hover li.nav-item {
+                    color: white;
+                }
+            }
+
+        }
+    }
+}
