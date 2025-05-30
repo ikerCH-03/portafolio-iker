@@ -27,7 +27,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/shared/errors/error404/error404.component.html"
             ],
             "styles": [
               "src/styles.scss"
