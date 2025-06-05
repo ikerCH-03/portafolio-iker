@@ -30,12 +30,12 @@ export class WelcomeComponent implements AfterViewInit {
     }
 
     let currentFrame = 0;
-    const totalFrames = 1800; // Ajusta la duración de la animación (más alto = más lento)
+    const totalFrames = 1600; // Ajusta la duración de la animación (más alto = más lento)
     const dashLength = 1000; // Un valor arbitrario para el largo del trazo
     textElement.style.strokeDasharray = `${dashLength}`;
     textElement.style.strokeDashoffset = `${dashLength}`;
     textElement.style.stroke = strokeColor;
-    textElement.style.fill = 'transparent'; // Relleno inicial (transparente)
+    textElement.style.fill = 'transparent'; // Relleno inicial
 
     // Función de easing (suavizado) para el trazo
     const easeOutCubic = (t: number) => {

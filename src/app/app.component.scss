@@ -1,5 +1,8 @@
+// Estilos globales
+@import "./styles/variables.scss";
+
 .eb-garamond {
-    font-family: "EB Garamond", serif;
+    font-family: $estilo-letra, serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -11,7 +14,6 @@ div.container-fluid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 0.7fr repeat(3, 1fr) 0.5fr;
-
 
     /* Altura restante después del padding */
     img {
@@ -33,23 +35,29 @@ div.container-fluid {
 }
 
 ::view-transition-old(root) {
-    animation: exit 2s ease 0s 1 normal forwards;
+    animation: exit 1s ease 0s 1 normal forwards;
 }
 
 ::view-transition-new(root) {
-    animation: enter 3s ease 0s 1 normal forwards;
+    animation: enter 2s ease 0s 1 normal forwards;
 }
 
-/* Responsive */
+// Responsive
+@media screen and (max-width: 992px) {
+    div.container-fluid {
+        grid-template-rows: 0.4fr repeat(3, 1fr) 0.3fr;
+    }
+}
 @media screen and (max-width: 550px) {
     div.container-fluid {
         min-height: calc(100vh - 2.4rem);
     }
 }
 
-/* Responsive */
 @media screen and (max-width: 450px) {
     div.container-fluid {
         min-height: calc(100vh - 1.6rem);
+
+        grid-template-rows: 0.3fr repeat(3, 1fr) 0.3fr;
     }
 }

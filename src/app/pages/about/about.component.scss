@@ -1,4 +1,4 @@
-/* Estilos del Home */
+// Estilos del about 
 .home-section {
     height: 100%;
     width: calc(100vw - 6rem);
@@ -16,7 +16,7 @@
     }
 }
 
-/* Ajuste responsive */
+// Ajuste responsive
 @media (max-width: 768px) {
     .home-section {
         flex-direction: column;

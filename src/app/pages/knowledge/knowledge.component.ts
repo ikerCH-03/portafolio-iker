@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
-/* Interfaz para cada conocimiento */
+// Interfaz para cada conocimiento
 interface Knowledge {
   name: string;
   icon: string;
@@ -17,7 +17,7 @@ interface Knowledge {
 })
 export class KnowledgeComponent {
 
-  // Variables de las knowledge
+  // Variables del componente
   frontendKnowledge: Knowledge[] = [
     { name: 'Angular', icon: 'assets/icons/angular.png', level: 'Avanzado' },
     { name: 'TypeScript', icon: 'assets/icons/tp.png', level: 'Intermedio' },
@@ -25,7 +25,6 @@ export class KnowledgeComponent {
     { name: 'JavaScript', icon: 'assets/icons/js.webp', level: 'Intermedio' },
     { name: 'CSS3', icon: 'assets/icons/css3.svg', level: 'Avanzado' },
     { name: 'SCSS', icon: 'assets/icons/scss.svg', level: 'Intermedio' },
-    //Añade más frontend aquí
   ];
 
   backendKnowledge: Knowledge[] = [
@@ -34,10 +33,9 @@ export class KnowledgeComponent {
     { name: 'Symfony', icon: 'assets/icons/symfony.png', level: 'Intermedio' },
     { name: 'Python', icon: 'assets/icons/python.webp', level: 'Intermedio' },
     { name: 'MySql', icon: 'assets/icons/mysql.png', level: 'Intermedio' },
-    //Añade más backend aquí
   ];
 
-  // Función para rellenar la barra y su color dependiendo del nivel
+  // Método para rellenar la barra y su color dependiendo del nivel
   getLevelData(level: string): { width: string, color: string } {
     switch (level.toLowerCase()) {
       case 'bajo':
