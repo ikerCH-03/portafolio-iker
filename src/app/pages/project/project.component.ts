@@ -22,12 +22,12 @@ export class ProjectComponent {
   // Variable con los distintos proyectos
   proyectos: Proyecto[] = [
     {
-      name: "Multitasking", info: "Proyecto desarrollado con Symfony que permite a usuarios publicar tareas y a otros usuarios postularse para realizarlas a cambio de una remuneración.Incluye valoraciones y perfiles para asegurar confianza entre las partes.",
-      img: "assets/multitasking.png", git: "https://github.com/ikerCH-03/Multitasking-proyecto", internet: ""
+      name: "Pixeloria", info: "Galería web para buscar y mostrar imágenes gratuitas de alta calidad usando la API de Unsplash. Desarrollado con HTML, CSS y JS.",
+      img: "assets/pixeloria_img.png", git: "https://github.com/ikerCH-03/Pixeloria", internet: "https://pixeloria.vercel.app/"
     },
     {
-      name: "Multifunción", info: "Se trata de un proyecto donde se encuentran varias funciones(calculadora,tiempo,países) realizado con angular.",
-      img: "assets/multifunción.jpg", git: "https://github.com/ikerCH-03/proyecto-multifuncion", internet: ""
+      name: "Multifunción", info: "Proyecto desarrollado durante las prácticas que incluye varias funcionalidades como calculadora, gestión de tiempo y consulta de países, todo implementado con Angular.",
+      img: "assets/pagina-en-construccion.jpg", git: "", internet: ""
     },
   ]
 }
