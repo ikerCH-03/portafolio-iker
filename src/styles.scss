@@ -1,4 +1,6 @@
-/* Estilos globales de la página */
+// Estilos globales de la página
+@import 'app/styles/variables.scss'; 
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +13,7 @@ body {
   min-height: 100%;
   padding: 3rem;
   overflow: auto;
-  background-color: #0a102f;
+  background-color: $color-principal;
 }
 
 @keyframes anim-fade-in {
@@ -20,25 +22,24 @@ body {
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
-/* Responsive */
+// Responsive
 @media screen and (max-width: 550px) {
   body {
     padding: 1.7rem;
   }
 }
 
-/* Responsive */
 @media screen and (max-width: 450px) {
   body {
     padding: 0.8rem;
   }
 }
 
-/* Animaciones */
+// Animaciones
 @keyframes enter {
   0% {
     opacity: 0;
@@ -52,7 +53,6 @@ body {
   }
 }
 
-/* Animación de salida (cuando la página actual desaparece) */
 @keyframes exit {
   0% {
     opacity: 1;
@@ -67,13 +67,13 @@ body {
   }
 }
 
-/* Aplicación de las animaciones a las transiciones de página */
+// Aplicación de las animaciones a las transiciones de página
 ::view-transition-old(root) {
-  animation: exit 2s ease 0s 1 normal forwards;
+  animation: exit 1s ease 0s 1 normal forwards;
   /* Animación de salida */
 }
 
 ::view-transition-new(root) {
-  animation: enter 3s ease 0s 1 normal forwards;
+  animation: enter 1.7s ease 0s 1 normal forwards;
   /* Animación de entrada */
 }

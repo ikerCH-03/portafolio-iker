@@ -1,63 +1,58 @@
+@import '../../styles/variables.scss';
+
 // Estilos del nav
 div {
     ul.navbar-nav {
-        background-color: #0A102F;
+        background-color: $color-nav;
         box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
 
-        // Estado activo (la página actual)
-        a.item-link.active {
-            background-color: white;
-
-            li.nav-item {
-                color: #0A102F; // Color oscuro para contraste sobre blanco
+        li.nav-item {
+            // Estado activo (la página actual)
+            &.active {
+                a.item-link {
+                    background-color: $color-texto;
+                    color: $color-nav; // texto oscuro sobre fondo blanco
+                }
             }
         }
 
-
         a.item-link {
+            display: block;
             padding: 12px;
             margin: 5px;
             font-weight: bolder;
             text-decoration: none;
+            color: $color-texto;
+            transition: color 0.3s ease;
 
-            li.nav-item {
-                color: white;
-                transition: color 0.3s ease;
-            }
-        }
+            &:not(.active) {
+                background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
+                background-size: 0% 100%;
+                background-repeat: no-repeat;
+                background-position: left;
+                transition: background-size 0.6s ease;
 
-        a.item-link:not(.active) {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
-            background-size: 0% 100%;
-            background-repeat: no-repeat;
-            background-position: left;
-            transition: background-size 0.6s ease;
-
-            &:hover {
-                background-size: 100% 100%;
-            }
-
-            &:hover li.nav-item {
-                color: #0A102F; // cambia este color según el contraste que busques
+                &:hover {
+                    background-size: 100% 100%;
+                    color: $color-nav; // color contraste al pasar ratón
+                }
             }
         }
     }
 }
 
-/* Responsive para quitar la animación al pasar el ratón
- porque cuando se usa un movil o tablet se pulsa directamente y no hace falta la animación  */
-@media screen and (max-width:770px) {
+/* Responsive para quitar animación en móvil/tablet */
+@media screen and (max-width: 770px) {
     div {
         ul.navbar-nav {
             a.item-link:not(.active) {
                 background-image: none;
                 transition: none;
 
-                &:hover li.nav-item {
-                    color: white;
+                &:hover {
+                    color: $color-texto;
                 }
             }
-
         }
     }
 }
