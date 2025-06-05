@@ -1,10 +1,10 @@
-# Portafolio de proyectos
+# 📚 Portafolio de proyectos
 
 En esta aplicación podras ver los proyectos que he ido realizando a lo largo de tiempo, también un poco cuales son los conocimientos que he ido adquiriendo a lo largo del mismo.
 
 ## 🚀 Demo
 
-[Enlace a la demo o página en vivo (si tienes)]
+[Enlace a la demo o página en vivo]
 
 ## 📸 Capturas de pantalla
 
@@ -18,13 +18,13 @@ En esta aplicación podras ver los proyectos que he ido realizando a lo largo de
 
 ## 📦 Instalación
 
-### **1. Clonar la app**
+### 1️⃣ Clonar la app**
 
 ```bash
 git clone https://github.com/tu-usuario/tu-proyecto.git
 ```
 
-### ***2. Iniciar la app**
+### 2️⃣ Iniciar la app**
 
 ```bash
 cd tu-proyecto
