@@ -8,7 +8,7 @@ En esta aplicación podras ver los proyectos que he ido realizando a lo largo de
 
 ## 📸 Capturas de pantalla
 
-![Captura de la app](screenshot.png)
+![Captura de la app](./src/assets/img_portafolio.png)
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -31,3 +31,11 @@ cd tu-proyecto
 npm install
 ng serve y navegar a `http://localhost:4200/` o también puedes poner directamente *ng serve -o*
 ```
+
+## 📫 Contacto
+
+Creado por **Iker Cordón Haro**
+
+[LinkedIn](https://www.linkedin.com/in/iker-cordón-haro) | [GitHub](https://github.com/ikerCH-03)
+
+¡Estaré encantado de conectar contigo!
