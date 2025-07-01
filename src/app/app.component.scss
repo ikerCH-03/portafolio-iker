@@ -10,11 +10,16 @@
 div.container-fluid {
     min-height: calc(100vh - 6rem);
     height: auto;
-
+    border: 1px solid var(--color-texto);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 0.7fr repeat(3, 1fr) 0.5fr;
 
+    div {
+        div.nombre {
+            color: var(--color-texto);
+        }
+    }
     /* Altura restante después del padding */
     img {
         border-radius: 20px;
@@ -29,8 +34,30 @@ div.container-fluid {
         grid-row-start: 5;
     }
 
+    .fa-github {
+        color: var(--github);
+    }
     .fa-linkedin {
         color: #055d8d;
+    }
+    span {
+        i {
+            font-size: 16px;
+            border-radius: 50%;
+            padding: 3px 5px;
+        }
+    }
+    .lunaActive {
+        i {
+            color: #055d8d;
+            background-color: white;
+        }
+    }
+    .solActive {
+        i {
+            color: white;
+            background-color: #055d8d;
+        }
     }
 }
 

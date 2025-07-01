@@ -1,5 +1,8 @@
+@import '../../styles/variables.scss'; 
+
 // Estilos de la página de las skills
 .skills-intro {
+    color: var(--color-texto);
     font-size: 16px;
     text-align: justify;
 }
@@ -21,7 +24,7 @@
             width: 60px;
             height: 60px;
             border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(220, 220, 220, 0.3);
+            box-shadow: 0 4px 10px var(--shadow);
             transition: transform 0.3s ease;
             animation: tilt 3s ease-in-out infinite;
         }

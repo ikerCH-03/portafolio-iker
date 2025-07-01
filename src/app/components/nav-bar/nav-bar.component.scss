@@ -1,17 +1,20 @@
 @import '../../styles/variables.scss';
 
 // Estilos del nav
-div {
+div.container-fluid {
+    div.nombre {
+        color: var(--color-texto);
+    }
     ul.navbar-nav {
-        background-color: $color-nav;
-        box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+        background-color: var(--color-nav);
+        box-shadow: 0 6px 12px var(--shadow);
 
         li.nav-item {
             // Estado activo (la página actual)
             &.active {
                 a.item-link {
-                    background-color: $color-texto;
-                    color: $color-nav; // texto oscuro sobre fondo blanco
+                    background-color: var(--color-texto);
+                    color: var(--color-nav); // texto oscuro sobre fondo blanco
                 }
             }
         }
@@ -22,11 +25,11 @@ div {
             margin: 5px;
             font-weight: bolder;
             text-decoration: none;
-            color: $color-texto;
+            color: var(--color-texto);
             transition: color 0.3s ease;
 
             &:not(.active) {
-                background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
+                background-image: linear-gradient(var(--color-nav-active), var(--color-nav-active));
                 background-size: 0% 100%;
                 background-repeat: no-repeat;
                 background-position: left;
@@ -34,7 +37,7 @@ div {
 
                 &:hover {
                     background-size: 100% 100%;
-                    color: $color-nav; // color contraste al pasar ratón
+                    color: var(--color-nav); // color contraste al pasar ratón
                 }
             }
         }
@@ -50,7 +53,7 @@ div {
                 transition: none;
 
                 &:hover {
-                    color: $color-texto;
+                    color: var(--color-texto);
                 }
             }
         }

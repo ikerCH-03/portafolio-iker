@@ -13,7 +13,7 @@ body {
   min-height: 100%;
   padding: 3rem;
   overflow: auto;
-  background-color: $color-principal;
+  background-color: var(--color-principal);
 }
 
 @keyframes anim-fade-in {

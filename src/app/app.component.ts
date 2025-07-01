@@ -23,4 +23,23 @@ export class AppComponent {
   get errorPage(): boolean {
     return this.router.url === '/error404';
   }
+
+  cambiarModo() {
+    // Cambiar el tema de la aplicación
+    const temaActual = document.documentElement.getAttribute('data-bs-theme');
+    const nuevoTema = temaActual === 'dark' ? 'light' : 'dark';
+    
+    let luna = document.getElementById('luna');
+    let sol = document.getElementById('sol');
+
+    if (nuevoTema == 'dark') {
+      sol?.classList.remove('solActive');
+      luna?.classList.add('lunaActive');
+    } else {
+      luna?.classList.remove('lunaActive');
+      sol?.classList.add('solActive');
+    }
+
+    document.documentElement.setAttribute('data-bs-theme', nuevoTema);
+  }
 }

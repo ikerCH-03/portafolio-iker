@@ -1,5 +1,24 @@
 // variables.scss
-$color-principal: #0A102F;
-$color-texto: #ffffff;
 $estilo-letra: "EB Garamond";
-$color-nav: #0a102f;
+
+::ng-deep [data-bs-theme="dark"] {
+    --color-principal: #0a102f;
+    --color-texto: #ffffff;
+    --color-nav: #0a102f;
+    --color-nav-active: rgba(255, 255, 255, 0.25);
+    --shadow: rgba(220, 220, 220, 0.3);
+
+    /* Footer */
+    --github: white;
+}
+
+::ng-deep [data-bs-theme="light"] {
+    --color-principal: rgb(212, 212, 212);
+    --color-texto: #0a102f;
+    --color-nav: #f3f3f3;
+    --color-nav-active: rgba(10, 16, 47, 0.25);
+    --shadow: rgba(10, 16, 47, 0.3);
+
+    /* Footer */
+    --github: black;
+}
