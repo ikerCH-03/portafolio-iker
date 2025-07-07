@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ThemeService } from './../../../core/services/theme.service';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({

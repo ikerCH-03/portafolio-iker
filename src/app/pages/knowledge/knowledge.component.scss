@@ -2,9 +2,12 @@
 
 // Estilos de la página de las skills
 .skills-intro {
-    color: var(--color-texto);
     font-size: 16px;
     text-align: justify;
+}
+
+h2,p,strong {
+    color: var(--color-texto);
 }
 
 .skills {
@@ -42,7 +45,7 @@
             opacity 0.2s,
             transform 0.2s;
         white-space: nowrap;
-        background: #1e1e2f;
+        background: var(--tooltip-knowledge);
         color: #f1f1f1;
         border-radius: 8px;
         text-align: center;

@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 // Estilos de la sección de los proyectos
 .project-section {
     height: 100%;
@@ -10,7 +12,7 @@
     }
 
     .card {
-        box-shadow: 0 4px 10px rgba(220, 220, 220, 0.3);
+        box-shadow: 0 4px 10px var(--color-texto);
         background-color: rgb(1, 1, 79);
         color: white;
         width: 20rem;

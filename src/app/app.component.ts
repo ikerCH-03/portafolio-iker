@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ThemeService } from './core/services/theme.service';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterOutlet } from '@angular/router';
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
@@ -10,9 +11,13 @@ import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'Portafolio de Iker';
-  constructor(private router: Router) { }
+export class AppComponent implements OnInit {
+
+  constructor(private router: Router, public themeService: ThemeService) { }
+
+  ngOnInit(): void {
+    this.cambiarModo();
+  }
 
   // Verifica si la ruta actual es 'welcome'
   get showNavBar(): boolean {
@@ -25,21 +30,6 @@ export class AppComponent {
   }
 
   cambiarModo() {
-    // Cambiar el tema de la aplicación
-    const temaActual = document.documentElement.getAttribute('data-bs-theme');
-    const nuevoTema = temaActual === 'dark' ? 'light' : 'dark';
-    
-    let luna = document.getElementById('luna');
-    let sol = document.getElementById('sol');
-
-    if (nuevoTema == 'dark') {
-      sol?.classList.remove('solActive');
-      luna?.classList.add('lunaActive');
-    } else {
-      luna?.classList.remove('lunaActive');
-      sol?.classList.add('solActive');
-    }
-
-    document.documentElement.setAttribute('data-bs-theme', nuevoTema);
+    this.themeService.cambioColor();
   }
 }

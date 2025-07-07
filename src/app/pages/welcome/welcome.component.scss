@@ -4,12 +4,12 @@
 .boton {
   background-color: var(--color-texto);
   color: var(--color-nav);
-  border: 5px solid #0a102f;
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.678);
+  border: 5px solid var(--color-nav);
+  box-shadow: 0 6px 12px var(--color-texto);
 }
 
 button:hover {
-  background-color: #f0f0f0b3; /* Color más suave */
+  background-color: var(--hover-inicio); /* Color más suave */
 }
 
 // Efecto al hacer clic (presionado)
@@ -20,7 +20,7 @@ button:active {
 }
 
 #text-path {
-  fill: var(--color-texto);
+  stroke: var(--color-texto);
 }
 
 h3 {

@@ -31,7 +31,8 @@
               "src/app/shared/errors/error404/error404.component.html"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
             "scripts": []
           },

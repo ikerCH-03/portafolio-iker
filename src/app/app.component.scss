@@ -40,23 +40,20 @@ div.container-fluid {
     .fa-linkedin {
         color: #055d8d;
     }
-    span {
-        i {
-            font-size: 16px;
-            border-radius: 50%;
-            padding: 3px 5px;
+    div.modo {
+        padding: 12px;
+        button {
+            border: 0;
+            font-size: 14px;
+            border-radius: 25%;
+            color: var(--color-texto);
+            background-color: var(--color-principal);
+            border: 2px solid var(--color-texto);
+            box-shadow: 0 0 5px var(--color-texto);
         }
-    }
-    .lunaActive {
-        i {
-            color: #055d8d;
-            background-color: white;
-        }
-    }
-    .solActive {
-        i {
-            color: white;
-            background-color: #055d8d;
+
+        button:hover {
+            transform: scale(0.9);
         }
     }
 }

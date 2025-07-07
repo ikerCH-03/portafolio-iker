@@ -8,6 +8,9 @@ $estilo-letra: "EB Garamond";
     --color-nav-active: rgba(255, 255, 255, 0.25);
     --shadow: rgba(220, 220, 220, 0.3);
 
+    --hover-inicio: #f0f0f0b3;
+    --tooltip-knowledge: #1e1e2f;
+
     /* Footer */
     --github: white;
 }
@@ -18,7 +21,9 @@ $estilo-letra: "EB Garamond";
     --color-nav: #f3f3f3;
     --color-nav-active: rgba(10, 16, 47, 0.25);
     --shadow: rgba(10, 16, 47, 0.3);
+    --hover-inicio: #4e567b;
 
+    --tooltip-knowledge: #c0c0c0;
     /* Footer */
     --github: black;
 }

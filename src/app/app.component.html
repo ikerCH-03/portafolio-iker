@@ -1,23 +1,38 @@
 <!-- Página principal -->
 <div class="eb-garamond h-100">
     <div class="container-fluid p-0 text-white">
-        <div *ngIf="!errorPage" class="nav d-flex w-100 p-lg-2 align-items-center justify-content-between text-white">
-            <nav-bar *ngIf="showNavBar" class="w-100"></nav-bar>
-            <div *ngIf="!showNavBar" class="nombre ms-auto text-center mx-2">IKER CORDÓN HARO</div>
+        @if (!errorPage) {
+        <div class="nav d-flex w-100 p-lg-2 align-items-center justify-content-between text-white">
+            @if (showNavBar) {
+            <nav-bar class="w-100"></nav-bar>
+            } @else {
+            <div class="nombre ms-auto text-center mx-2 fw-bold">IKER CORDÓN HARO</div>
+            }
         </div>
+        }
         <div class="content">
             <router-outlet />
         </div>
-        <div *ngIf="!errorPage" class="footer h-100 d-flex justify-content-between align-items-center text-white p-2">
+        @if (!errorPage) {
+        <div class="footer h-100 d-flex justify-content-between align-items-center text-white p-2">
             <div>
                 <a href="https://github.com/ikerCH-03" target="_blank"><i class="fa-brands fa-github fs-5 mx-3"></i></a>
                 <a href="https://www.linkedin.com/in/iker-cord%C3%B3n-haro" target="_blank"><i
                         class="fa-brands fs-5 fa-linkedin mx-3"></i></a>
             </div>
-            <div>
-                <span id="luna" (click)="cambiarModo()"><i class="fa-solid fa-moon mx-3"></i></span>
-                <span id="sol" (click)="cambiarModo()"><i class="fa-solid fa-sun"></i></span>
+            <div class="modo d-flex align-items-center justify-content-center">
+                @if (themeService.esModoOscuro()) {
+                <button id="sol" (click)="cambiarModo()">
+                    <i class="bi bi-sun-fill"></i>
+                </button>
+                } @else {
+                <button id="luna" (click)="cambiarModo()">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                }
             </div>
         </div>
+        }
+
     </div>
 </div>
