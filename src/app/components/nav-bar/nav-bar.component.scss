@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 // Estilos del nav
 div.container-fluid {
@@ -46,14 +46,16 @@ div.container-fluid {
 
 /* Responsive para quitar animación en móvil/tablet */
 @media screen and (max-width: 770px) {
-    div {
-        ul.navbar-nav {
-            a.item-link:not(.active) {
-                background-image: none;
-                transition: none;
+    div.container-fluid {
+        div {
+            ul.navbar-nav {
+                a.item-link:not(.active) {
+                    background-image: none;
+                    transition: none;
 
-                &:hover {
-                    color: var(--color-texto);
+                    &:hover {
+                        color: var(--color-texto);
+                    }
                 }
             }
         }
