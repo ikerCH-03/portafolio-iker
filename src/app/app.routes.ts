@@ -17,11 +17,6 @@ export const routes: Routes = [
         path: '',
         loadComponent: () => import('./pages/welcome/welcome.component').then(m => m.WelcomeComponent)
     },
-
-    // Página de error
-    {
-        path: 'error404',
-        loadComponent: () => import('./shared/errors/error404/error404.component').then(m => m.Error404Component)
-    },
-    { path: '**', redirectTo: 'error404', }
+    
+    { path: '**', redirectTo: 'about', }
 ];
